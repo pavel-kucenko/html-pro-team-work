@@ -1,0 +1,47 @@
+$error-bgc: #DD4E55;
+$info-bgc: #F2E09F;
+$success-bgc: #61D392;
+
+.notification__report {
+    padding: 14px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #FFFFFF;
+    border-radius: 6px; 
+}
+
+.notification__report--br {
+    border-radius: 6px 6px 0 0; 
+}
+
+.notification__report--error {
+    background-color: $error-bgc;    
+}
+
+.notification__report--info {
+    background-color: $info-bgc;
+}
+
+.notification__report--success {
+    background-color: $success-bgc;
+}
+
+.notification__message {
+    padding: 20px;
+    background-color: #EAEFF2;
+    border-radius: 0px 0px 6px 6px;
+
+    p {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}

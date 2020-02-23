@@ -1,0 +1,19 @@
+mixin notifications(notification, report)
+    .notification
+        if (notification == "error" && block)
+            .notification__report.notification__report--error.notification__report--br #{report}
+        else if (notification == "error")
+            .notification__report.notification__report--error #{report}
+        if (notification == "info" && block)
+            .notification__report.notification__report--info.notification__report--br #{report}
+        else if (notification == "info")
+            .notification__report.notification__report--info #{report}
+        if (notification == "success" && block)
+            .notification__report.notification__report--success.notification__report--br #{report}
+        else if (notification == "success")
+            .notification__report.notification__report--success #{report}
+        block
+
+mixin message()
+    .notification__message
+        block
