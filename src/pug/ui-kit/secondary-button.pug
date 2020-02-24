@@ -14,12 +14,12 @@ block content
 
     //- Демонстрация компонента
     .ui-kit__component-demo
-        +secondary-button('#!')
+        +secondary-button()
 
     //- Код для вызова компонента
     .ui-kit__component-code
         pre.
-            +secondary-button('#!')
+            +secondary-button()
 
     //- Файл в котором описан компонент
     .ui-kit__element-title.
@@ -29,5 +29,5 @@ block content
     //- Распечатка кода компонента
     .ui-kit__element-code
         pre.
-            mixin secondary-button(link, text="Отмена")
+            mixin secondary-button(text="Отмена", link="#")
                 a(class="secondary-button" href= link)&attributes(attributes) \#{text}
