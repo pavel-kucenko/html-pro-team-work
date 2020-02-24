@@ -1,7 +1,8 @@
 .primary-button {
     border: none;
     border-radius: 6px;
-    background: #000000;
+    background: $black;
+    outline: none;
 
     padding-top: 0.951em; // 13px
     padding-bottom: 0.951em; // 13px
@@ -13,14 +14,17 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 1;
+    
 
     &:hover,
     &:focus {
-        background: #7E9BBD;
+        outline: none;
+        background: $lightGrayButton;
     }
 
     &:active {
-        background: #49525B;
+        outline: none;
+        background: $darkGrayButton;
     }
 }
 
