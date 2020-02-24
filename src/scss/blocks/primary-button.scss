@@ -1,0 +1,30 @@
+.primary-button {
+    border: none;
+    border-radius: 6px;
+    background: #000000;
+
+    padding-top: 0.951em; // 13px
+    padding-bottom: 0.951em; // 13px
+    padding-left: 1.25em; // 20px
+    padding-right: 1.25em; // 20px
+
+    color: $white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+
+    &:hover,
+    &:focus {
+        background: #7E9BBD;
+    }
+
+    &:active {
+        background: #49525B;
+    }
+}
+
+
+
+
+
