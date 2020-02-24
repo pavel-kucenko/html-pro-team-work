@@ -14,12 +14,12 @@ block content
 
     //- Демонстрация компонента
     .ui-kit__component-demo
-        +primary-button('button', 'Текст кнопки')
+        +primary-button()
 
     //- Код для вызова компонента
     .ui-kit__component-code
         pre.
-            +primary-button('submit', 'Текст кнопки')
+            +primary-button()
 
     //- Файл в котором описан компонент
     .ui-kit__element-title.
@@ -29,5 +29,5 @@ block content
     //- Распечатка кода компонента
     .ui-kit__element-code
         pre.
-            mixin primary-button(type="submit", text="Отправить")
+            mixin primary-button(text="Отправить", type="submit")
                 button(class="primary-button" type= type)&attributes(attributes) #{text}
