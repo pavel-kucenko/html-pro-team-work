@@ -19,7 +19,7 @@ block content
     //- Код для вызова компонента
     .ui-kit__component-code
         pre.
-            +avatar-small('./../img/avatars/avatar-small.jpg')
+            +avatar-small(FilePath='./../img/avatars/avatar-small.jpg', link="#")
 
     //- Файл в котором описан компонент
     .ui-kit__element-title.
@@ -29,6 +29,7 @@ block content
     //- Распечатка кода компонента
     .ui-kit__element-code
         pre.
-            mixin avatar-small(FilePath='./../img/avatars/avatar-small.jpg')
-                .avatar-small
-                    img(src= FilePath alt="Аватарка")
+            mixin avatar-small(FilePath='./../img/avatars/avatar-small.jpg', link="#")
+                a(href= link)
+                    .avatar-small
+                        img(src= FilePath alt="Аватарка")
