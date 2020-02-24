@@ -1,3 +1,4 @@
-mixin heading(text, linkText, link="#" )
+mixin heading(text, linkText, link="#")
     h2.heading #{text}
-        a(href= link) #{linkText}
+        if linkText
+            a(href= link) #{linkText}
