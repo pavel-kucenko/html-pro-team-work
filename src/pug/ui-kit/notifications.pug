@@ -14,30 +14,19 @@ block content
 
     //- Демонстрация компонента
     .ui-kit__component-demo
-        +notifications("error", "Сообщение об ошибке")
-            
-    //- Код для вызова компонента
-    .ui-kit__component-code
-        pre.
-            +notifications("error", "Сообщение об ошибке")
+        .block-full-width
+            +notifications("Сообщение о действии")
+            +notifications("Сообщение об ошибке", "error")
+            +notifications("Сообщение об успехе", "success")
 
-    //- Демонстрация компонента
-    .ui-kit__component-demo
-        +notifications("info", "Сообщение о действии")
-            
     //- Код для вызова компонента
     .ui-kit__component-code
         pre.
-            +notifications("info", "Сообщение о действии")
+            +notifications("Сообщение о действии")
 
-    //- Демонстрация компонента
-    .ui-kit__component-demo
-        +notifications("success", "Сообщение об успехе")
-            
-    //- Код для вызова компонента
-    .ui-kit__component-code
-        pre.
-            +notifications("success", "Сообщение об успехе")
+            +notifications("Сообщение об ошибке", "error")
+
+            +notifications("Сообщение об успехе", "success")
 
     //- Заголовок компонента
     h1.ui-kit__component-title.
@@ -45,49 +34,32 @@ block content
 
     //- Демонстрация компонента
     .ui-kit__component-demo
-        +notifications("error", "Сообщение об ошибке")
-            +message
-               p Здесь будет текст ошибки. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur in eget turpis sit maecenas in diam scelerisque habitant.
-               p Возможно на 2 абзаца. Turpis rhoncus, sed imperdiet sodales suspendisse eget. Viverra tortor id vitae venenatis non cras in maecenas tincidunt. Quam quisque cras faucibus quisque amet.
-
+        .block-full-width
+            +notifications("Сообщение о действии")
+                p  Здесь будет текст ошибки. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur in eget turpis sit maecenas in diam scelerisque habitant.
+                p Возможно на 2 абзаца. Turpis rhoncus, sed imperdiet sodales suspendisse eget. Viverra tortor id vitae venenatis non cras in maecenas tincidunt. Quam quisque cras faucibus quisque amet.
+            +notifications("Сообщение об ошибке", "error")
+                p  Здесь будет текст ошибки. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur in eget turpis sit maecenas in diam scelerisque habitant.
+                p Возможно на 2 абзаца. Turpis rhoncus, sed imperdiet sodales suspendisse eget. Viverra tortor id vitae venenatis non cras in maecenas tincidunt. Quam quisque cras faucibus quisque amet.
+            +notifications("Сообщение об успехе", "success")
+                p  Здесь будет текст ошибки. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur in eget turpis sit maecenas in diam scelerisque habitant.
+                p Возможно на 2 абзаца. Turpis rhoncus, sed imperdiet sodales suspendisse eget. Viverra tortor id vitae venenatis non cras in maecenas tincidunt. Quam quisque cras faucibus quisque amet.
+    
     //- Код для вызова компонента
     .ui-kit__component-code
         pre.
-            +notifications("error", "Сообщение об ошибке")
-                +message
-                    p Здесь будет текст ошибки. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur in eget turpis sit maecenas in diam scelerisque habitant.
-                    p Возможно на 2 абзаца. Turpis rhoncus, sed imperdiet sodales suspendisse eget. Viverra tortor id vitae venenatis non cras in maecenas tincidunt. Quam quisque cras faucibus quisque amet.
-
-    //- Демонстрация компонента
-    .ui-kit__component-demo
-        +notifications("info", "Сообщение о действии")
-            +message
-               p Здесь будет текст ошибки. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur in eget turpis sit maecenas in diam scelerisque habitant.
-               p Возможно на 2 абзаца. Turpis rhoncus, sed imperdiet sodales suspendisse eget. Viverra tortor id vitae venenatis non cras in maecenas tincidunt. Quam quisque cras faucibus quisque amet.
-
-    //- Код для вызова компонента
-    .ui-kit__component-code
-        pre.
-            +notifications("info", "Сообщение о действии")
-                +message
-                    p Здесь будет текст ошибки. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur in eget turpis sit maecenas in diam scelerisque habitant.
-                    p Возможно на 2 абзаца. Turpis rhoncus, sed imperdiet sodales suspendisse eget. Viverra tortor id vitae venenatis non cras in maecenas tincidunt. Quam quisque cras faucibus quisque amet.
-
-    //- Демонстрация компонента
-    .ui-kit__component-demo
-        +notifications("success", "Сообщение об успехе")
-            +message
-               p Здесь будет текст ошибки. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur in eget turpis sit maecenas in diam scelerisque habitant.
-               p Возможно на 2 абзаца. Turpis rhoncus, sed imperdiet sodales suspendisse eget. Viverra tortor id vitae venenatis non cras in maecenas tincidunt. Quam quisque cras faucibus quisque amet.
-
-    //- Код для вызова компонента
-    .ui-kit__component-code
-        pre.
-            +notifications("success", "Сообщение об успехе")
-                +message
-                    p Здесь будет текст ошибки. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur in eget turpis sit maecenas in diam scelerisque habitant.
-                    p Возможно на 2 абзаца. Turpis rhoncus, sed imperdiet sodales suspendisse eget. Viverra tortor id vitae venenatis non cras in maecenas tincidunt. Quam quisque cras faucibus quisque amet.
-
+            +notifications("Сообщение о действии")
+                p  Здесь будет текст ошибки. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur in eget turpis sit maecenas in diam scelerisque habitant.
+                p Возможно на 2 абзаца. Turpis rhoncus, sed imperdiet sodales suspendisse eget. Viverra tortor id vitae venenatis non cras in maecenas tincidunt. Quam quisque cras faucibus quisque amet.
+            
+            +notifications("Сообщение об ошибке", "error")
+                p  Здесь будет текст ошибки. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur in eget turpis sit maecenas in diam scelerisque habitant.
+                p Возможно на 2 абзаца. Turpis rhoncus, sed imperdiet sodales suspendisse eget. Viverra tortor id vitae venenatis non cras in maecenas tincidunt. Quam quisque cras faucibus quisque amet.
+            
+            +notifications("Сообщение об успехе", "success")
+                p  Здесь будет текст ошибки. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur in eget turpis sit maecenas in diam scelerisque habitant.
+                p Возможно на 2 абзаца. Turpis rhoncus, sed imperdiet sodales suspendisse eget. Viverra tortor id vitae venenatis non cras in maecenas tincidunt. Quam quisque cras faucibus quisque amet.
+    
     //- Файл в котором описан компонент
     .ui-kit__element-title.
         Название файла:
@@ -96,22 +68,23 @@ block content
     //- Распечатка кода компонента
     .ui-kit__element-code
         pre.
-            mixin notifications(notification, report)
-                .notification
-                    if (notification == "error" && block)
-                        .notification__report.notification__report--error.notification__report--br #{report}
-                    else if (notification == "error")
-                        .notification__report.notification__report--error #{report}
-                    if (notification == "info" && block)
-                        .notification__report.notification__report--info.notification__report--br #{report}
-                    else if (notification == "info")
-                        .notification__report.notification__report--info #{report}
-                    if (notification == "success" && block)
-                        .notification__report.notification__report--success.notification__report--br #{report}
-                    else if (notification == "success")
-                        .notification__report.notification__report--success #{report}
-                    block
-
-            mixin message()
-                .notification__message
-                    block
+            mixin notifications(title, notifications)
+                //- Проверяем тип нотификации и определяем нужный класс
+                if (notifications == "error")
+                    - var typeNotifications = "notifications__title--error"
+                else if  (notifications == "success")
+                    - var typeNotifications = "notifications__title--success"
+                else
+                    - var typeNotifications = ""
+                //- Проверяем на вложенность блока и убираем скругление углов дополнительным классом
+                if block
+                    - var additionalClass = "notifications__title--with-message"
+                else
+                    - var additionalClass = ""
+                //- Создаем разметку
+                .notifications(class=additionalClass)
+                    .notifications__title(class= typeNotifications) #{title}
+                    //- Если есть вложенный блок, создаем разметку
+                    if block
+                        .notifications__message
+                            block

@@ -1,34 +1,35 @@
 $error-bgc: #DD4E55;
 $info-bgc: #F2E09F;
 $success-bgc: #61D392;
+$info-color: #000000;
+$title-color: #FFFFFF;
 
-.notification__report {
+.notifications__title {
     padding: 14px 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.3;
     font-weight: 600;
-    color: #FFFFFF;
-    border-radius: 6px; 
-}
-
-.notification__report--br {
-    border-radius: 6px 6px 0 0; 
-}
-
-.notification__report--error {
-    background-color: $error-bgc;    
-}
-
-.notification__report--info {
+    color: $info-color;
+    border-radius: 6px;
     background-color: $info-bgc;
 }
 
-.notification__report--success {
-    background-color: $success-bgc;
+.notifications.notifications__title--with-message .notifications__title  {
+    border-radius: 6px 6px 0 0; 
 }
 
-.notification__message {
+.notifications__title--error {
+    background-color: $error-bgc;
+    color: $title-color;
+}
+
+.notifications__title--success {
+    background-color: $success-bgc;
+    color: $title-color;
+}
+
+.notifications__message {
     padding: 20px;
     background-color: #EAEFF2;
     border-radius: 0px 0px 6px 6px;
