@@ -15,15 +15,14 @@ block content
     //- Демонстрация компонента
     .ui-kit__component-demo
         .block-full-width
-            +input("Заголовок поста", "Введите название записи")
-            //- label.input__label Заголовок поста
-            //-     input.input(type="text" placeholder="Введите название записи")
-        
+            +input("Введите название записи", "Заголовок поста")        
+            +input("Ваше имя")
 
     //- Код для вызова компонента
     .ui-kit__component-code
         pre.
-            +primary-button()
+            +input("Введите название записи", "Заголовок поста")    
+            +input("Ваше имя")
 
     //- Файл в котором описан компонент
     .ui-kit__element-title.
@@ -33,5 +32,9 @@ block content
     //- Распечатка кода компонента
     .ui-kit__element-code
         pre.
-            mixin primary-button(text="Отправить", type="submit")
-                button(class="primary-button" type= type)&attributes(attributes) \#{text}
+            mixin input(placeholder, label)
+                if label
+                    label.input__label \#{label}
+                        input.input(type="text" placeholder= placeholder)&attributes(attributes)
+                else
+                    input.input(type="text" placeholder= placeholder)&attributes(attributes)
