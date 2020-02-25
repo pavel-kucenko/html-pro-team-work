@@ -2,7 +2,6 @@ $grayPaginationbutton: #EAEFF2;
 $lightgrayPaginationbutton: #DDE8F6;
 $darkgrayPaginationbutton: #C3CFDE;
 
-
 .pagination-button {
     display: inline-block;
     line-height: 1;  
@@ -20,14 +19,17 @@ $darkgrayPaginationbutton: #C3CFDE;
     font-weight: 700;    
 
     &:hover,
-    &:focus,
-    .active {
+    &:focus {
         background: $lightgrayPaginationbutton;
         text-decoration: none;   
         color: $black;
     }
 
     &:active {
-        background: $darkgrayPaginationbutton;   
+        background: #C3CFDE;   
     }
+}
+
+.active {
+    background: $lightgrayPaginationbutton;   
 }
