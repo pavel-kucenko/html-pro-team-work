@@ -1,0 +1,13 @@
+mixin block-downloads(title, text, FilePath='./../img/block-downloads/block-downloads.jpg')
+    .block-downloads_posts
+        h4 #{title}
+        p #{text}
+        +file-button()
+
+    .block-downloads_posts
+        h4 #{title}
+        p #{text}
+        +file-button()
+        img(src= FilePath alt="Загрузка картинки")
+        .block-button-delete
+            +delete-button()

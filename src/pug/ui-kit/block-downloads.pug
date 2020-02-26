@@ -1,0 +1,50 @@
+extends ./layout/ui-layout.pug
+include ./mixins/*.pug
+include ./../mixins/*.pug
+
+block variables
+    - var title = 'extends ./layout/ui-layout.pug
+include ./mixins/*.pug
+include ./../mixins/*.pug
+
+block variables
+    - var title = 'Блок загрузки файла';
+    - var pageClass = 'body--dashboard';
+
+block content
+
+    //- Заголовок компонента
+    h1.ui-kit__component-title.
+        Блок загрузки файла
+
+    //- Демонстрация компонента
+    .ui-kit__component-demo
+        .block-downloads_posts
+            +block-downloads('Обложка поста:', 'Изображение jpg или png, рекомендуемая ширина 945px и больше, высота от 400px и более. Вес до 2Мб.')
+
+    //- Код для вызова компонента
+    .ui-kit__component-code
+        pre.
+            +block-downloads('Обложка поста:', 'Изображение jpg или png, рекомендуемая ширина 945px и больше, высота от 400px и более. Вес до 2Мб.')
+
+    //- Файл в котором описан компонент
+    .ui-kit__element-title.
+        Название файла:
+        mixins/block-downloads.pug
+
+    //- Распечатка кода компонента
+    .ui-kit__element-code
+        pre.
+            mixin block-downloads(title, text, FilePath='./../img/block-downloads/block-downloads.jpg')
+                .block-downloads_posts
+                    h4 #{title}
+                    p #{text}
+                    +file-button()
+
+                .block-downloads_posts
+                    h4 #{title}
+                    p #{text}
+                    +file-button()
+                    img(src= FilePath alt="Загрузка картинки")
+                    .block-button-delete
+                        +delete-button()
