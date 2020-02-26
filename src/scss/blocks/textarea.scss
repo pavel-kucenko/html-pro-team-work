@@ -6,7 +6,7 @@
     border: 1px solid #7E9BBD;
     border-radius: 6px;
     outline: none;
-    resize: none;
+    resize: vertical;
 
     &:focus {
         border-color: rgb(77, 144, 254); 
