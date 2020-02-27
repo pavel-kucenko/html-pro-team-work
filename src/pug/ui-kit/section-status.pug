@@ -13,7 +13,7 @@ block content
         Секция статус
 
     //- Демонстрация компонента
-    .ui-kit__component-demo.ui-kit__component-demo--dark-bg
+    .ui-kit__component-demo
         .block-full-width
             include ./../sections/section-status.pug
 
@@ -30,6 +30,6 @@ block content
     //- Распечатка кода компонента
     .ui-kit__element-code
         pre.
-            .section-status
+            a(href="#").section-status  
                 .section-status-badge Свободен для новых проектов
-                .section-status-text Рассматриваю предложения по верстке и frontend разработке. \#[a(href="#") Подробности]
+                .section-status-text Рассматриваю предложения по верстке и frontend разработке. Подробности
