@@ -1,0 +1,60 @@
+extends ./layout/ui-layout.pug
+include ./mixins/*.pug
+include ./../mixins/*.pug
+
+block variables
+    - var title = 'Навигация';
+    - var pageClass = 'body--dashboard';
+
+block content
+
+    //- Заголовок компонента
+    h1.ui-kit__component-title.
+        Навигация
+
+    //- Демонстрация компонента
+    .ui-kit__component-demo
+        nav.nav
+            ul.nav__list
+                each item in nav
+                    li.nav__list-item
+                        a(href= item.link).nav__list-item-link #{item.name}
+
+    //- Код для вызова компонента
+    .ui-kit__component-code
+        pre.
+            nav.nav
+                ul.nav__list
+                    each item in nav
+                        li.nav__list-item
+                            a(href= item.link).nav__list-item-link \#{item.name}
+
+    //- Файл в котором описан компонент
+    .ui-kit__element-title.
+        Название файла:
+        data/nav.json
+
+    //- Распечатка кода компонента
+    .ui-kit__element-code
+        pre.
+            [
+                {
+                    "name": "Обо мне",
+                    "link": "#"
+                },
+
+                {
+                    "name": "Портфолио",
+                    "link": "#"
+                },
+
+                {
+                    "name": "Блог",
+                    "link": "#"
+                },
+
+                {
+                    "name": "Контакты",
+                    "link": "#"
+                }
+            ]
