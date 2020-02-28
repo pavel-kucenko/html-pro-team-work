@@ -15,45 +15,13 @@ block content
     //- Демонстрация компонента
     .ui-kit__component-demo.ui-kit__component-demo--dark-bg
         .block-full-width
-            include ./../sections/section-header.pug            
+            +section-header()          
+            +section-header("inner")          
 
     //- Код для вызова компонента
     .ui-kit__component-code
         pre.
-            include ./../sections/section-header.pug
-
-    //- Файл в котором описан компонент
-    .ui-kit__element-title.
-        Название файла:
-        sections/section-header.pug
-
-    //- Распечатка кода компонента
-    .ui-kit__element-code
-        pre.
-            +section-header()
-
-    //- Заголовок компонента
-    h1.ui-kit__component-title.
-        Шапка на внутренней
-
-    //- Демонстрация компонента
-    .ui-kit__component-demo.ui-kit__component-demo--dark-bg
-        .block-full-width
-            include ./../sections/section-header-inner.pug           
-
-    //- Код для вызова компонента
-    .ui-kit__component-code
-        pre.
-            include ./../sections/section-header-inner.pug 
-
-    //- Файл в котором описан компонент
-    .ui-kit__element-title.
-        Название файла:
-        sections/section-header-inner.pug
-
-    //- Распечатка кода компонента
-    .ui-kit__element-code
-        pre.
+            +section-header()          
             +section-header("inner")
 
     //- Файл в котором описан компонент
@@ -69,7 +37,7 @@ block content
                     .section-header.section-header--inner
                         .section-header__content
                             h2.section-header__content-title Digital Nomad
-                            h2.section-header__content-subtitle cайт IT специалиста
+                            p.section-header__content-subtitle cайт IT специалиста
                             nav.nav
                                 ul.nav__list
                                     each item in nav
@@ -79,7 +47,7 @@ block content
                     .section-header
                         .section-header__content
                             h1.section-header__content-title Digital Nomad
-                            h2.section-header__content-subtitle веб-разработчик, ui/ux дизайнер
+                            p.section-header__content-subtitle веб-разработчик, ui/ux дизайнер
                             nav.nav
                                 ul.nav__list
                                     each item in nav
