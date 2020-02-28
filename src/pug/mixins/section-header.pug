@@ -1,4 +1,4 @@
-mixin section-header(page)
+mixin section-header(page, link)
     if page == "inner"
         .section-header.section-header--inner
             .section-header__content
@@ -8,7 +8,7 @@ mixin section-header(page)
                     ul.nav__list
                         each item in nav
                             li.nav__list-item
-                                a(href= item.link).nav__list-item-link #{item.name}
+                                a(href= item.link class=(item.link === link ? "nav__list-item-link--active" : undefined)).nav__list-item-link #{item.name}
     else
         .section-header
             .section-header__content
