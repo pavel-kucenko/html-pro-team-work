@@ -1,12 +1,12 @@
 .section-pagination {
-    display: flex;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-pagination__item {
-    margin-right: 15px;
-    &:last-child {
-        margin-right: 0;
-    }
+  margin-right: 15px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
-
