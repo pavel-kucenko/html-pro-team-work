@@ -34,8 +34,11 @@
         &:last-child{
             margin-right: 0;
         }
-    }
-    
+    }    
+}
+
+.ui-kit__component-demo.ui-kit__component-demo--dark-bg {
+    background-color: #D8D8D8;
 }
 
 .ui-kit__component-code {
