@@ -1,0 +1,11 @@
+mixin one-comment(login='Джон До', date="05 Мая 2017 года в 15:45", avatar_url, link)
+    .one-comment
+        .one-comment__avatar
+            +avatar-small(avatar_url,link)
+        .one-comment__data
+            .one-comment__login #{login}
+            .one-comment__date
+                img(src="./../img/favicons/clock.svg", alt="")
+                | #{date}
+            .one-comment__text
+                block
