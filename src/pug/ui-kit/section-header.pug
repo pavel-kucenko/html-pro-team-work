@@ -5,6 +5,7 @@ include ./../mixins/*.pug
 block variables
     - var title = 'Шапка';
     - var pageClass = 'body--dashboard';
+    - var pageLink = 'about.html';
 
 block content
 
@@ -16,13 +17,13 @@ block content
     .ui-kit__component-demo.ui-kit__component-demo--dark-bg
         .block-full-width
             +section-header()          
-            +section-header("inner", "about.html")          
+            +section-header("inner")          
 
     //- Код для вызова компонента
     .ui-kit__component-code
         pre.
             +section-header()          
-            +section-header("inner", "about.html")
+            +section-header("inner")
 
     //- Файл в котором описан компонент
     .ui-kit__element-title.
@@ -32,7 +33,7 @@ block content
     //- Распечатка кода компонента
     .ui-kit__element-code
         pre.
-            mixin section-header(page, link)
+            mixin section-header(page)
                 if page == "inner"
                     .section-header.section-header--inner
                         .section-header__content
@@ -42,7 +43,7 @@ block content
                                 ul.nav__list
                                     each item in nav
                                         li.nav__list-item
-                                            a(href= item.link class=(item.link === link ? "nav__list-item-link--active" : undefined)).nav__list-item-link \#{item.name}
+                                            a(href= item.link class=(item.link === pageLink ? "nav__list-item-link--active" : undefined)).nav__list-item-link \#{item.name}
                 else
                     .section-header
                         .section-header__content
@@ -53,6 +54,17 @@ block content
                                     each item in nav
                                         li.nav__list-item
                                             a(href= item.link).nav__list-item-link \#{item.name}
+
+    //- Файл в котором описан компонент
+    .ui-kit__element-title.
+        Название файла:
+        pages/*.pug
+
+    //- Распечатка кода компонента
+    .ui-kit__element-code
+        pre.
+            block variables
+                - var pageLink = 'about.html';
 
     //- Файл в котором описан компонент
     .ui-kit__element-title.
