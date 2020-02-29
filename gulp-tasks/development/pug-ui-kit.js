@@ -54,6 +54,9 @@ gulp.task("pug:ui-kit", function(callback) {
                     locals: {
                         jsonData: JSON.parse(
                             fs.readFileSync("./src/data/data.json", "utf8")
+                        ),
+                        nav: JSON.parse(
+                            fs.readFileSync("./src/data/nav.json", "utf8")
                         )
                     }
                 })
