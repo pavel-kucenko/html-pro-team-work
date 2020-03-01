@@ -26,5 +26,8 @@
 
 .timeline-item__content p {
     margin: 0;
-    padding: 0;
+    margin-bottom: 10px; 
+    &:last-child {
+    margin-bottom: 0;
+    }
 }

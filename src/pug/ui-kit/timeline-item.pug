@@ -14,15 +14,13 @@ block content
 
     //- Демонстрация компонента
     .ui-kit__component-demo
-        +timeline-item("февраль 2020 — по настояще время", "Frontend разработчик, Athlas IT solutions", "Работа в команде социальной сети Атлас. Работал в команде над обновление сервиса Музыка, работа над видео разделом. Создание видеоплеера. Создание кроссбраузерных компонентов.")
+        +timeline-item("февраль 2020 — по настояще время", "Frontend разработчик, Athlas IT solutions")
+            p Работа в команде социальной сети Атлас. Работал в команде над обновление сервиса Музыка, работа над видео разделом. Создание видеоплеера. Создание кроссбраузерных компонентов.
         
     //- Код для вызова компонента
     .ui-kit__component-code
         pre.
-            +timeline-item("февраль 2020 — по настояще время", "Frontend разработчик, Athlas IT solutions", "Работа в команде социальной сети Атлас. Работал в команде над обновление сервиса Музыка, работа над видео разделом. Создание видеоплеера. Создание кроссбраузерных компонентов.")
-            
-
-            
+            +timeline-item("февраль 2020 — по настояще время", "Frontend разработчик, Athlas IT solutions")
 
     //- Файл в котором описан компонент
     .ui-kit__element-title.
@@ -34,7 +32,7 @@ block content
         pre.
             mixin timeline-item(info, title, content)
                 .timeline-item
-                    .timeline-item__info 
-                    .timeline-item__title 
-                    .timeline-item__content
-                        p 
+                .timeline-item__info
+                .timeline-item__title 
+                .timeline-item__content
+                    block 
