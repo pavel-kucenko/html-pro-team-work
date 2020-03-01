@@ -1,0 +1,8 @@
+mixin post-about-scills( title='чем могу быть полезен')
+        .post-about-scills        
+            h4.post-about-scills__title #{title}
+            ul.scills__list
+                each skill in ['Верстка сайтов', 'Frontend' ,'UI/UX дизайн']
+                    li.scills__list-item #{skill}
+                    
+                        
