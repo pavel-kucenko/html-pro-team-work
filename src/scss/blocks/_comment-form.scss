@@ -9,15 +9,13 @@
 .comment-form__avatar {
     margin-right: 20px;
 }
-.comment-form__login, .comment-form__date {
-display: inline-block;
-}
 .comment-form__data-wrapper {
     display: flex;
     align-items: center;
+    margin-bottom: 9px;
     }
 .comment-form__login {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.3;
@@ -36,7 +34,6 @@ display: inline-block;
 }
 .comment-form__text {
     font-family: Montserrat, sans-serif;
-    margin-top: 9px;
     font-size: 16px;
     line-height: 1.3;
     color: #000000;
