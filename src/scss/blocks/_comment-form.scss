@@ -1,4 +1,4 @@
-.comment-form {
+.comment {
     box-sizing: border-box;
     border-radius: 8px;
     border: 1px solid rgba(126, 155, 189, 0.3);
@@ -6,15 +6,15 @@
     display: flex;
     
 }
-.comment-form__avatar {
+.comment__avatar {
     margin-right: 20px;
 }
-.comment-form__data-wrapper {
+.comment__user-info {
     display: flex;
     align-items: center;
     margin-bottom: 9px;
     }
-.comment-form__login {
+.comment__username {
     font-family: Montserrat, sans-serif;
     font-weight: bold;
     font-size: 16px;
@@ -22,7 +22,7 @@
     margin-right: 10px;
 
 }
-.comment-form__date {
+.comment__date {
     font-family: Montserrat, sans-serif;
     font-size: 16px;
     color: #7E9BBD;
@@ -32,7 +32,7 @@
         margin-right: 7px;
     }
 }
-.comment-form__text {
+.comment__text {
     font-family: Montserrat, sans-serif;
     font-size: 16px;
     line-height: 1.3;

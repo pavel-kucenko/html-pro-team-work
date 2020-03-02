@@ -15,31 +15,31 @@ block content
     //- Демонстрация компонента
     .ui-kit__component-demo
         .block-full-width
-            +comment-form('Джон До', '05 мая 2017 года 15:45', './../img/avatars/comment-avatars.png', '#')
+            +comment('Джон До', '05 мая 2017 года 15:45', './../img/avatars/comment-avatars.png', '#')
                 p Замечательный парк, обязательно отправлюсь туда этим летом.
     //- Код для вызова компонента
     .ui-kit__component-code
         pre.
-            +comment-form('Джон До', '05 мая 2017 года 15:45', './../img/avatars/comment-avatars.png', '#')
+            +comment('Джон До', '05 мая 2017 года 15:45', './../img/avatars/comment-avatars.png', '#')
                 p Замечательный парк, обязательно отправлюсь туда этим летом.
 
     //- Файл в котором описан компонент
     .ui-kit__element-title.
         Название файла:
-        mixins/comment-form.pug
+        mixins/comment.pug
 
     //- Распечатка кода компонента
     .ui-kit__element-code
         pre.
-            mixin comment-form(author='Джон До', date="05 Мая 2017 года в 15:45", avatar_url, link)
-                .comment-form
-                    .comment-form__avatar
+            mixin comment(author='Джон До', date="05 Мая 2017 года в 15:45", avatar_url, link)
+                .comment
+                    .comment__avatar
                         +avatar-small(avatar_url,link)
-                    .comment-form__data
-                        .comment-form__data-wrapper
-                            .comment-form__login #{author}
-                            .comment-form__date
+                    .comment__data
+                        .comment__user-info
+                            .comment__username #{author}
+                            .comment__date
                                 img(src="./../img/favicons/clock.svg", alt="")
                                 | #{date}
-                        .comment-form__text
+                        .comment__text
                             block
