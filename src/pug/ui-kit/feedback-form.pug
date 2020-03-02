@@ -20,15 +20,25 @@ block content
     //- Код для вызова компонента
     .ui-kit__component-code
         pre.
-            include ./../sections/feedback.pug
+            include ./../sections/feedback-form.pug
 
     //- Файл в котором описан компонент
     .ui-kit__element-title.
         Название файла:
-        sections/feedback.pug
+        sections/feedback-form.pug
 
     //- Распечатка кода компонента
     .ui-kit__element-code
         pre.
-            mixin test-button(link, text="Перейти")
-                a(class="test-button" href= link)&attributes(attributes) #{text}
+            form.feedback-form
+                .feedback-form__heading
+                    +heading("Напишите мне")
+                .feedback-form__input
+                    +input("Ваше имя")
+                .feedback-form__input
+                    +input("Email")
+                .feedback-form__input    
+                    +textarea("Введите сообщение")
+                .feedback-form__upload
+                    +block-upload('Прикрепить файл:', 'jpg, png, pdf, вес до 2 Мб')
+                +primary-button()
