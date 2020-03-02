@@ -1,0 +1,7 @@
+mixin contacts(communicationMethod, contact, link)
+        tr
+            th #{communicationMethod}:
+            if link
+                th.block-contacts__info--contact #[a(href= link) #{contact}]
+            else
+                th.block-contacts__info--contact #{contact}
