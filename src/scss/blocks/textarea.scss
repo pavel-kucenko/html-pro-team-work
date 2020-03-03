@@ -3,21 +3,20 @@
     width: 100%;
     height: 140px;
     background: #FFFFFF;
-    border: 1px solid #7E9BBD;
+    border: 1px solid #7e9bbd;
     border-radius: 6px;
     outline: none;
     resize: vertical;
+    font-family: 'Montserrat', sans-serif;
 
     &:focus {
-        border-color: rgb(77, 144, 254); 
+        border-color: rgb(77, 144, 254);
     }
 
     &::placeholder {
-        font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         font-size: 16px;
-        line-height: 1;
-        color: rgba(0, 0, 0, 0.5);              
+        color: rgba(0, 0, 0, 0.5);
     }
 }
 
@@ -29,15 +28,15 @@
 .textarea__label {
     display: block;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;    
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1;
 
     & > .textarea {
-        
+
         &:first-child {
             margin-top: 10px;
-        }      
+        }
     }
 }
