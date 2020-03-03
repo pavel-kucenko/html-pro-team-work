@@ -32,7 +32,7 @@ block content
             .block-contacts
                 .block-contacts__title
                     +heading("Контакты")
-                table.block-contacts__info
+                dl.block-contacts__info
                     +contacts("Email", "hi@digitalnomad.pro", "mailto:hi@digitalnomad.pro")
                     +contacts("Мобильный", "+7 (905) 555-77-88", "tel:+79055557788")
                     +contacts("Адрес", "Москва, Пресненская набережная, д. 6, стр. 2")
@@ -46,9 +46,8 @@ block content
     .ui-kit__element-code
         pre.
             mixin contacts(communicationMethod, contact, link)
-                    tr
-                        th \#{communicationMethod}:
-                        if link
-                            th.block-contacts__info--contact \#[a(href= link) \#{contact}]
-                        else
-                            th.block-contacts__info--contact \#{contact}
+                dt \#{communicationMethod}:
+                if link
+                    dd.block-contacts__info--contact \#[a(href= link) \#{contact}]
+                else
+                    dd.block-contacts__info--contact \#{contact}
