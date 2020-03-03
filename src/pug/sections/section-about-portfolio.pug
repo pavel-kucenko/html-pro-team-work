@@ -3,10 +3,9 @@
         .section-about-portfolio__title
             +heading("Обо мне")
         .row
-            .section-about-portfolio__avatar.col-6
+            .section-about-portfolio__avatar.col
                 +avatar-big('./../img/avatars/avatar-big.png')
-            .section-about-portfolio__wrapper
-                .section-about-portfolio__content
-                    +post-about-me('обо мне')
-                        p Занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты. Этот сайт я сделал в рамках обучения в школе онлайн обучения WebCademy. Чуть позже я обновлю в нём свой контент. А пока посмотрите, как тут всё классно!              
-                    +post-about-skills()
+            .section-about-portfolio__content.col
+                +post-about-me('обо мне')
+                    p Занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты. Этот сайт я сделал в рамках обучения в школе онлайн обучения WebCademy. Чуть позже я обновлю в нём свой контент. А пока посмотрите, как тут всё классно!              
+                +post-about-skills()
