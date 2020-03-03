@@ -4,7 +4,6 @@
 
 .block-contacts__info {
     font-size: 0;
-    width: 540px;
     font-family: 'Playfair Display', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -12,29 +11,25 @@
     color: #000000;
 }
 
-.block-contacts__info dt {
+.block-contacts__info dl {
     margin: 0;
     padding: 0;
-    display: inline-block;
-    
-    &:not(:last-child) {
-        margin-right: 5px;
-    }
+    display: flex;
 
-    &:not(:last-of-type) {
+    &:not(:last-child) {
         margin-bottom: 10px;
     }
 }
 
-.block-contacts__info dd {
+.block-contacts__info dl dt {
     margin: 0;
-    padding: 0;  
-    display: inline-block;
-    width: 410px;
+    padding: 0;
+    margin-right: 5px;
+}
 
-    &:not(:last-of-type) {
-        margin-bottom: 10px;
-    }
+.block-contacts__info dl dd {
+    margin: 0;
+    padding: 0;
     
     &.block-contacts__info--contact {
         font-weight: 400;
