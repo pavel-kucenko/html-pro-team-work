@@ -1,3 +1,45 @@
 {
-    "siteName": "Gulp ultimate 2020"
+    "siteName": "Gulp ultimate 2020",
+    "porfolioCards": [
+        {
+            "title": "Архитектурное бюро John Doe и партнеры. Сайт под ключ",
+            "tags": "HTML, CSS, wordpress",
+            "img": "./img/projects/project-img-01.jpg"
+        },
+        {
+            "title": "Сайт о спасении черепах и морской фауны. Верстка и frontend",
+            "tags": "HTML, CSS, JS, React",
+            "img": "./img/projects/project-img-02.jpg"
+        },
+        {
+            "title": "Квадрокоптер Phantom от Dji company. Сайт под ключ",
+            "tags": "Figma, HTML, CSS, PHP",
+            "img": "./img/projects/project-img-03.jpg"
+        },
+        {
+            "title": "Верстка сайта для газеты “Вечерний Лондон”",
+            "tags": "HTML, CSS, wordpress",
+            "img": "./img/projects/project-img-04.jpg"
+        },
+        {
+            "title": "Архитектурное бюро John Doe и партнеры. Сайт под ключ",
+            "tags": "HTML, CSS, wordpress",
+            "img": "./img/projects/project-img-01.jpg"
+        },
+        {
+            "title": "Сайт о спасении черепах и морской фауны. Верстка и frontend",
+            "tags": "HTML, CSS, JS, React",
+            "img": "./img/projects/project-img-02.jpg"
+        },
+        {
+            "title": "Квадрокоптер Phantom от Dji company. Сайт под ключ",
+            "tags": "Figma, HTML, CSS, PHP",
+            "img": "./img/projects/project-img-03.jpg"
+        },
+        {
+            "title": "Верстка сайта для газеты “Вечерний Лондон”",
+            "tags": "HTML, CSS, wordpress",
+            "img": "./img/projects/project-img-04.jpg"
+        }
+    ]
 }
