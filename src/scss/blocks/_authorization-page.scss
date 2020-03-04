@@ -1,16 +1,28 @@
 .authorization-page {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 100vh;
+    background-color: #000000;
     background-image: url(./../img/authorization-page/bg-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center;    
 
     &::before, &::after {
         display: none;
+    }
+
+    &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: -1;
     }
 }
 
