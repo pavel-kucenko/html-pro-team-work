@@ -23,14 +23,16 @@ block content
                 include ./../sections/section-status.pug
             //- Секция карточек с проектами
             section.main-page__projects-cards
-                +heading("Новые проекты в ", "портфолио")
+                .main-page__projects-cards-title
+                    +heading("Новые проекты в ", "портфолио")
                 .row
                     each card in jsonData.mainCards
                         .col-6
                             +card-project(card.title, card.img, card.tags)
             //- Секция карточек с постами
             section.main-page__posts-cards
-                +heading("Новые записи в ", "блоге")
+                .main-page__posts-cards-title
+                    +heading("Новые записи в ", "блоге")
                 .row
                     each card in jsonData.mainPosts
                         .col-4
