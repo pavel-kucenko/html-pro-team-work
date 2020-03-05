@@ -1,24 +1,18 @@
 .admin-panel {
- 
+   display: flex;
+  align-items: center;
+  justify-content: space-between;
   background: #000000;
-  /* background: #000000; */
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-.admin-panel__block {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 .admin-panel__block-list {
-  width: 1100px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .admin-panel__message {
@@ -31,18 +25,16 @@
 
 .admin-panel__message::after {
   content: "8";
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
-  width: 20px;
-  height: 18px;
-  top: -8px;
-  left: 12px;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  padding: 4px;
   font-size: 12px;
   text-align: center;
   background: #c90000;
   border-radius: 50%;
+  font-family: "Montserrat", sans-serif;
 }
 
 .admin-panel__comments {
@@ -50,21 +42,17 @@
 }
 .admin-panel__comments::before {
   content: "15";
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
-  width: 20px;
-  height: 18px;
-  top: -8px;
-  left: 12px;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  padding: 4px;
   font-size: 12px;
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
   text-align: center;
-  align-self: center;
   background: #c90000;
   border-radius: 50%;
+  font-family: "Montserrat", sans-serif;
+
 }
 
 .admin-panel__block-button {
@@ -83,6 +71,7 @@
 .admin-panel__link {
   display: flex;
   align-items: center;
+  margin-right: 45px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 16px;
