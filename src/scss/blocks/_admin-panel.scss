@@ -1,5 +1,5 @@
 .admin-panel {
-  width: 1440px;
+ 
   background: #000000;
   /* background: #000000; */
   padding-left: 50px;
@@ -80,7 +80,7 @@
   }
 }
 
-.admin-panel-link {
+.admin-panel__link {
   display: flex;
   align-items: center;
   font-family: "Montserrat", sans-serif;
@@ -94,7 +94,7 @@
   }
 }
 
-.admin-panel-link img {
+.admin-panel__link img {
   margin: 0;
   padding: 0;
   margin-right: 10px;
