@@ -5,6 +5,7 @@ block variables
     - var title = 'Пост';
     - var pageClass= "";
     - var pageLink = "blog.html"
+    - var arr = jsonData.blogPosts.length
 
 block content
     //- Шапка
@@ -36,10 +37,10 @@ block content
             .container
                 .page-post__title
                     +heading("Смотрите также")
-                .row
+                .row                    
                     each post, index in jsonData.blogPosts
-                        if index > 8
+                        if index > (jsonData.blogPosts.length - 4)
                             .col-4                            
-                                +card-post(post.title, post.img)
+                                +card-post(post.title, post.img)                                
     //-Подвал      
     include ./../sections/section-footer.pug
