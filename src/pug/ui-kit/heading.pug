@@ -29,7 +29,7 @@ block content
     //- Распечатка кода компонента
     .ui-kit__element-code
         pre.
-            mixin heading(text, linkText, link="#")
-                h2.heading \#{text}
+            mixin heading(text, linkText, link="#", tag="h2")
+                \#{tag}.heading \#{text}
                     if linkText
                         a(href= link) \#{linkText}

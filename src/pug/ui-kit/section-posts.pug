@@ -18,21 +18,18 @@ block content
     //- Код для вызова компонента
     .ui-kit__component-code
         pre.
-            include ./../sections/section-posts.pug
-
-            
+            include ./../sections/section-posts.pug            
 
     //- Файл в котором описан компонент
     .ui-kit__element-title.
         Название файла:
-
 
     //- Распечатка кода компонента
     .ui-kit__element-code
         pre.
             .section-posts
                 .section-posts__title
-                    +heading("Национальный парк Йосемити") 
+                    +heading("Национальный парк Йосемити", "", "", "h1") 
                 .section-posts__info 16 Марта 2017
                 .section-posts__img
                     img(src="./../img/posts/big-post1.jpg", alt="Национальный парк Йосемити")
