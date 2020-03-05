@@ -7,6 +7,8 @@ block variables
     - var pageLink = "blog.html"
 
 block content
+    //- Админ панель
+    include ./../sections/admin-panel.pug
     //- Шапка
     +section-header("inner", pageLink)
     main.page-post
