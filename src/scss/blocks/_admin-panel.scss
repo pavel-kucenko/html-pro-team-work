@@ -1,5 +1,5 @@
 .admin-panel {
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   background: #000000;
@@ -8,7 +8,6 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
 
 .admin-panel__block-list {
   display: flex;
@@ -52,11 +51,10 @@
   background: #c90000;
   border-radius: 50%;
   font-family: "Montserrat", sans-serif;
-
 }
 
 .admin-panel__block-button {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
