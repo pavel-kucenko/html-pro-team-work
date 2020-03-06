@@ -9,6 +9,10 @@
     color: #FFFFFF;
 }
 
+.control-panel__container {
+    margin-bottom: 100px;
+}
+
 .control-panel__title-wrapper {
     margin-bottom: 30px;
     text-align: center;
@@ -34,13 +38,12 @@
 .control-panel__list {
     margin: 0;
     padding: 0;
-    list-style-type: none ;
+    list-style-type: none;
 }
 
 .control-panel__list-item {
     margin: 0;
-    padding: 0;
-    
+    padding: 0;    
 }
 
 .control-panel__list-link {
